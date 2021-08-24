@@ -1,0 +1,30 @@
+@font-face {
+  font-family: 'aller';
+  src: url("../fonts/Aller_Rg.ttf");
+}
+
+@font-face {
+  font-family: 'aller-bold';
+  src: url("../fonts/Aller_Bd.ttf");
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url("../fonts/Helvetica.ttf");
+}
+
+@font-face {
+  font-family: 'Helvetica-bold ';
+  src: url("../fonts/Helvetica-Bold.ttf");
+}
+
+@font-face {
+  font-family: 'poppins ';
+  src: url("../fonts/Poppins-Regular.otf");
+}
+
+@font-face {
+  font-family: 'poppins-medium';
+  src: url("../fonts/Poppins-Medium.otf");
+}
+/*# sourceMappingURL=fonts.css.map */

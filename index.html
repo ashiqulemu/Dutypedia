@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/animate.min.css">
+    <link rel="stylesheet" href="./css/app.css">
+    <title>Dutypedia</title>
+</head>
+<body>
+
+    <!-- header section start  -->
+    <section class="header py-4">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light navbar-customize">
+                <div class="container-fluid">
+                    <a class="navbar-brand text-center" href="#">
+                        <img src="./images/home/logo.png" class="img-fluid">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="iconify" data-icon="feather:menu"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#"></a>
+                            </li>
+                        </ul>
+                        <div class="d-flex">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">categories</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">company</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">contact us</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        english
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="#">German</a></li>
+                                        <li><a class="dropdown-item" href="#">French</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Sign In</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link getStarted" href="#">get Started</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="row mt-3">
+                <div class="col-lg-7 d-flex align-items-center">
+                    <div class="hardWork">
+                        <h1>"<strong>hard work</strong> beats talent when
+                            talent doesn't work hard"
+                        </h1>
+                        <label>
+                            <input type="text" class="search" placeholder="Search Your Perfect Service">
+                            <span class="iconify" data-icon="ei:search"></span>
+                        </label>
+                        <div class="services">
+                            <span class="intro">Best Servises: </span>
+                            <a class="items" href="">education</a>
+                            <a class="items" href="">law</a>
+                            <a class="items" href="">doctor</a>
+                            <a class="items" href="">engineer</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="top-right">
+                        <img src="./images/home/Polygon 1.png" class="corner wow fadeInRight" >
+                        <img class="man wow fadeInRight "  data-wow-delay=".35s" src="./images/home/man.png"> 
+                        <img src="./images/home/Group 3442.png" class="mike "  >
+                        <img src="./images/home/NoPath.png" class="chat" >
+                        <img src="./images/home/block.png" class="block" >
+                        <img src="./images/home/group-like.png" class="like">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="userNotification" id='notification'>
+        <div class="user">
+            <img src="./images/home/user-1.png">
+        </div>
+        <div class="desc">
+            <span>John Michale</span>
+            <span>Doctor,Open A  Account.</span>
+            <span>1 hour's ago</span>
+        </div>
+        <div class="quite" onclick="closeIt();" >
+            <span class="iconify"data-icon="clarity:window-close-line"></span>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/iconify.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/app.js"></script>
+    <script type="text/javascript">
+        new WOW().init();
+    </script>
+</body>
+
+</html>

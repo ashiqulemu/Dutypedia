@@ -1,0 +1,298 @@
+// import files
+
+@import "./variables.scss";
+@import "./fonts.scss";
+@import "./animations.scss";
+
+// end 
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+// Header Section 
+
+.header {
+    height: 100vh;
+    background: $primary;
+    overflow: hidden;
+
+    @media(max-width:960px) {
+        height: auto;
+    }
+
+    .navbar-customize {
+        .navbar-nav {
+            .nav-item {
+                display: flex;
+                align-items: center;
+
+                .nav-link {
+                    font-family: 'aller';
+                    text-transform: capitalize;
+                    font-size: 16px;
+                    color: $white;
+
+                    &:hover {
+                        color: $white !important;
+                        ;
+                    }
+
+                    &.getStarted {
+                        font-size: 20px;
+                        font-family: 'Helvetica';
+                        background: #fff;
+                        border-radius: 10px;
+                        color: $primary;
+                        padding: 8px 20px;
+                        margin-left: 15px;
+
+                        @media(max-width:960px) {
+                            margin-left: unset;
+                        }
+
+                        &:hover {
+                            color: black !important;
+                            ;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .hardWork {
+        padding: 0 12px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h1 {
+            font-size: 45px;
+            font-family: 'aller';
+            text-transform: uppercase;
+            color: #fff;
+
+            @media(max-width:990px) {
+                font-size: 30px;
+                text-align: center;
+            }
+        }
+
+        label {
+            width: 86%;
+            position: relative;
+            margin: 25px 0;
+
+            @media(max-width:990px) {
+                width: 100%;
+            }
+
+            .search {
+                width: 100%;
+                background: #fff;
+                border-radius: 20px;
+                font-family: 'poppins ';
+                height: 50px;
+                border: 0;
+                outline: 0;
+                padding: 0 25px;
+                color: $text;
+
+                &::placeholder {
+                    font-size: 16px;
+                    color: $text;
+                }
+            }
+
+            .iconify {
+                position: absolute;
+                top: 10px;
+                font-size: 1.8rem;
+                right: 20px;
+                color: $text;
+            }
+        }
+
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+
+            @media(max-width:990px) {
+                justify-content: center;
+            }
+
+            .intro {
+                font-family: 'poppins ';
+                font-size: 20px;
+                color: $white;
+                margin-right: 10px;
+
+                @media(max-width:990px) {
+                    display: block;
+                    width: 98%;
+                    text-align: center;
+                    margin-bottom: 18px;
+                }
+            }
+
+            .items {
+                font-family: 'poppins ';
+                font-size: 16px;
+                color: #fff;
+                border: 2px solid #fff;
+                padding: 3px 21px;
+                border-radius: 10px;
+                text-decoration: none;
+                text-transform: capitalize;
+                margin-right: 20px;
+                margin-bottom: 8px;
+
+                &:hover {
+                    background: $white;
+                    color: $primary;
+                }
+            }
+        }
+
+    }
+
+    .top-right {
+        margin-top: 48px;
+        position: relative;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+
+        .mike {
+            position: absolute;
+            top: 26%;
+            left: 7%;
+            opacity: 0;
+            animation-delay: 3s;
+            animation: opacity 2s linear forwards, movement 1.9s linear infinite;
+
+        }
+
+        .chat {
+            position: absolute;
+            top: 36%;
+            right: 14%;
+            opacity: 0;
+            animation-delay: 3s;
+            animation: opacity 2s linear forwards, movement 3s linear infinite;
+        }
+
+        .block {
+            position: absolute;
+            right: 0;
+            bottom: 16%;
+            opacity: 0;
+            animation-delay: 3s;
+            animation: opacity 2s linear forwards, movement 1.9s linear infinite;
+        }
+
+        .like {
+            position: absolute;
+            left: 25px;
+            bottom: 13%;
+            opacity: 0;
+            animation-delay: 3s;
+            animation: opacity 2s linear forwards, movement 2s linear infinite;
+        }
+
+        .corner {
+            position: absolute;
+            right: 16%;
+            top: 13%;
+            opacity: 0;
+            animation-delay: 3s;
+            animation: opacity 2s linear forwards, movement 3.1s linear infinite;
+        }
+    }
+}
+
+// Global css
+
+.userNotification {
+    display: flex;
+    background-color:$white;
+    position: fixed;
+    z-index: 1; 
+    left:-100%; 
+    // left:20px;
+    border-radius: 10px;
+    padding: 15px;
+    column-gap: 15px;
+    bottom: 17px;
+    transition: all 0.5s ease;
+    max-width: 320px; 
+    box-shadow: 3px 3px 5px #655f5f9c;
+
+    &.active{
+        left: 20px;
+    }
+
+    .user {
+        flex-basis: 85px;
+    }
+
+    .desc {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        span {
+            &:nth-child(1) {
+                font-size: 16px;
+                font-family: 'poppins-medium';
+                color: #333333;
+            }
+        }
+
+        span {
+            &:nth-child(2) {
+                font-size: 16px;
+                font-family: 'poppins ';
+                color: $text;
+            }
+        }
+
+        span {
+            &:nth-child(3) {
+                font-size: 16px;
+                font-family: 'poppins ';
+                color:#DA1E37;
+            }
+        }
+    }
+    .quite{
+        position: absolute;
+        top: 6px;
+        right: 11px;
+        font-size: 1.4rem;
+        color: #666;
+        cursor:pointer;
+        &:hover{
+            color: $primary;
+        }
+    }
+}
+
+.navbar-toggler {
+    border-color: $white !important;
+    border-width: 2px;
+
+    .iconify {
+        font-size: 2rem;
+        color: $white;
+    }
+}

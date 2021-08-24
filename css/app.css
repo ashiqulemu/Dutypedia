@@ -1,0 +1,422 @@
+@font-face {
+  font-family: 'aller';
+  src: url("../fonts/Aller_Rg.ttf");
+}
+
+@font-face {
+  font-family: 'aller-bold';
+  src: url("../fonts/Aller_Bd.ttf");
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url("../fonts/Helvetica.ttf");
+}
+
+@font-face {
+  font-family: 'Helvetica-bold ';
+  src: url("../fonts/Helvetica-Bold.ttf");
+}
+
+@font-face {
+  font-family: 'poppins ';
+  src: url("../fonts/Poppins-Regular.otf");
+}
+
+@font-face {
+  font-family: 'poppins-medium';
+  src: url("../fonts/Poppins-Medium.otf");
+}
+
+@-webkit-keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes movement {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes movement {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header {
+  height: 100vh;
+  background: #EC0039;
+  overflow: hidden;
+}
+
+@media (max-width: 960px) {
+  .header {
+    height: auto;
+  }
+}
+
+.header .navbar-customize .navbar-nav .nav-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .navbar-customize .navbar-nav .nav-item .nav-link {
+  font-family: 'aller';
+  text-transform: capitalize;
+  font-size: 16px;
+  color: #fff;
+}
+
+.header .navbar-customize .navbar-nav .nav-item .nav-link:hover {
+  color: #fff !important;
+}
+
+.header .navbar-customize .navbar-nav .nav-item .nav-link.getStarted {
+  font-size: 20px;
+  font-family: 'Helvetica';
+  background: #fff;
+  border-radius: 10px;
+  color: #EC0039;
+  padding: 8px 20px;
+  margin-left: 15px;
+}
+
+@media (max-width: 960px) {
+  .header .navbar-customize .navbar-nav .nav-item .nav-link.getStarted {
+    margin-left: unset;
+  }
+}
+
+.header .navbar-customize .navbar-nav .nav-item .nav-link.getStarted:hover {
+  color: black !important;
+}
+
+.header .hardWork {
+  padding: 0 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header .hardWork h1 {
+  font-size: 45px;
+  font-family: 'aller';
+  text-transform: uppercase;
+  color: #fff;
+}
+
+@media (max-width: 990px) {
+  .header .hardWork h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+}
+
+.header .hardWork label {
+  width: 86%;
+  position: relative;
+  margin: 25px 0;
+}
+
+@media (max-width: 990px) {
+  .header .hardWork label {
+    width: 100%;
+  }
+}
+
+.header .hardWork label .search {
+  width: 100%;
+  background: #fff;
+  border-radius: 20px;
+  font-family: 'poppins ';
+  height: 50px;
+  border: 0;
+  outline: 0;
+  padding: 0 25px;
+  color: #666666;
+}
+
+.header .hardWork label .search::-webkit-input-placeholder {
+  font-size: 16px;
+  color: #666666;
+}
+
+.header .hardWork label .search:-ms-input-placeholder {
+  font-size: 16px;
+  color: #666666;
+}
+
+.header .hardWork label .search::-ms-input-placeholder {
+  font-size: 16px;
+  color: #666666;
+}
+
+.header .hardWork label .search::placeholder {
+  font-size: 16px;
+  color: #666666;
+}
+
+.header .hardWork label .iconify {
+  position: absolute;
+  top: 10px;
+  font-size: 1.8rem;
+  right: 20px;
+  color: #666666;
+}
+
+.header .hardWork .services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (max-width: 990px) {
+  .header .hardWork .services {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.header .hardWork .services .intro {
+  font-family: 'poppins ';
+  font-size: 20px;
+  color: #fff;
+  margin-right: 10px;
+}
+
+@media (max-width: 990px) {
+  .header .hardWork .services .intro {
+    display: block;
+    width: 98%;
+    text-align: center;
+    margin-bottom: 18px;
+  }
+}
+
+.header .hardWork .services .items {
+  font-family: 'poppins ';
+  font-size: 16px;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 3px 21px;
+  border-radius: 10px;
+  text-decoration: none;
+  text-transform: capitalize;
+  margin-right: 20px;
+  margin-bottom: 8px;
+}
+
+.header .hardWork .services .items:hover {
+  background: #fff;
+  color: #EC0039;
+}
+
+.header .top-right {
+  margin-top: 48px;
+  position: relative;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.header .top-right .mike {
+  position: absolute;
+  top: 26%;
+  left: 7%;
+  opacity: 0;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  -webkit-animation: opacity 2s linear forwards, movement 1.9s linear infinite;
+          animation: opacity 2s linear forwards, movement 1.9s linear infinite;
+}
+
+.header .top-right .chat {
+  position: absolute;
+  top: 36%;
+  right: 14%;
+  opacity: 0;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  -webkit-animation: opacity 2s linear forwards, movement 3s linear infinite;
+          animation: opacity 2s linear forwards, movement 3s linear infinite;
+}
+
+.header .top-right .block {
+  position: absolute;
+  right: 0;
+  bottom: 16%;
+  opacity: 0;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  -webkit-animation: opacity 2s linear forwards, movement 1.9s linear infinite;
+          animation: opacity 2s linear forwards, movement 1.9s linear infinite;
+}
+
+.header .top-right .like {
+  position: absolute;
+  left: 25px;
+  bottom: 13%;
+  opacity: 0;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  -webkit-animation: opacity 2s linear forwards, movement 2s linear infinite;
+          animation: opacity 2s linear forwards, movement 2s linear infinite;
+}
+
+.header .top-right .corner {
+  position: absolute;
+  right: 16%;
+  top: 13%;
+  opacity: 0;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  -webkit-animation: opacity 2s linear forwards, movement 3.1s linear infinite;
+          animation: opacity 2s linear forwards, movement 3.1s linear infinite;
+}
+
+.userNotification {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fff;
+  position: fixed;
+  z-index: 1;
+  left: -100%;
+  border-radius: 10px;
+  padding: 15px;
+  -webkit-column-gap: 15px;
+          column-gap: 15px;
+  bottom: 17px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  max-width: 320px;
+  -webkit-box-shadow: 3px 3px 5px #655f5f9c;
+          box-shadow: 3px 3px 5px #655f5f9c;
+}
+
+.userNotification.active {
+  left: 20px;
+}
+
+.userNotification .user {
+  -ms-flex-preferred-size: 85px;
+      flex-basis: 85px;
+}
+
+.userNotification .desc {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.userNotification .desc span:nth-child(1) {
+  font-size: 16px;
+  font-family: 'poppins-medium';
+  color: #333333;
+}
+
+.userNotification .desc span:nth-child(2) {
+  font-size: 16px;
+  font-family: 'poppins ';
+  color: #666666;
+}
+
+.userNotification .desc span:nth-child(3) {
+  font-size: 16px;
+  font-family: 'poppins ';
+  color: #DA1E37;
+}
+
+.userNotification .quite {
+  position: absolute;
+  top: 6px;
+  right: 11px;
+  font-size: 1.4rem;
+  color: #666;
+  cursor: pointer;
+}
+
+.userNotification .quite:hover {
+  color: #EC0039;
+}
+
+.navbar-toggler {
+  border-color: #fff !important;
+  border-width: 2px;
+}
+
+.navbar-toggler .iconify {
+  font-size: 2rem;
+  color: #fff;
+}
+/*# sourceMappingURL=app.css.map */
