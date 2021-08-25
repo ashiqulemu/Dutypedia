@@ -2,9 +2,9 @@
 
 window.addEventListener('load', function () {
 
-    setInterval(function () {
-        let notification = document.getElementById('notification').classList.toggle("active");
-    }, 10000);
+    // setInterval(function () {
+    //     let notification = document.getElementById('notification').classList.toggle("active");
+    // }, 6000);
 
    
 })

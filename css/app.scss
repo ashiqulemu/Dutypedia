@@ -177,7 +177,7 @@
             left: 7%;
             opacity: 0;
             animation-delay: 3s;
-            animation: opacity 2s linear forwards, movement 1.9s linear infinite;
+            animation: opacity 2s linear forwards, movement 6s linear infinite;
 
         }
 
@@ -187,7 +187,7 @@
             right: 14%;
             opacity: 0;
             animation-delay: 3s;
-            animation: opacity 2s linear forwards, movement 3s linear infinite;
+            animation: opacity 2s linear forwards, movement 5s linear infinite;
         }
 
         .block {
@@ -196,7 +196,7 @@
             bottom: 16%;
             opacity: 0;
             animation-delay: 3s;
-            animation: opacity 2s linear forwards, movement 1.9s linear infinite;
+            animation: opacity 2s linear forwards, movement 5s linear infinite;
         }
 
         .like {
@@ -205,7 +205,7 @@
             bottom: 13%;
             opacity: 0;
             animation-delay: 3s;
-            animation: opacity 2s linear forwards, movement 2s linear infinite;
+            animation: opacity 2s linear forwards, movement 4s linear infinite;
         }
 
         .corner {
@@ -219,24 +219,412 @@
     }
 }
 
+// professional services
+
+.professional-services {
+    padding: 80px 0;
+    background-color: $white;
+
+    @media(max-width:768px){
+        padding: 40px 0;
+    }
+
+    .services-slider {
+        margin: 50px 0;
+
+        .slide-items {
+
+            position: relative;
+            display: flex;
+            justify-content: center;
+
+            img {
+                filter: brightness(0.5);
+            }
+
+            .info {
+                position: absolute;
+                bottom: 25px;
+                left: 25px;
+
+                @media(max-width:768px) {
+                    text-align: center;
+                    width: 100%;
+                    left: unset;
+                }
+
+                h4 {
+                    font-size: 20px;
+                    color: $white;
+                    font-family: 'aller';
+
+                }
+
+                h5 {
+                    font-size: 16px;
+                    color: $white;
+                    font-family: 'aller';
+                }
+            }
+        }
+    }
+}
+
+
+// create meeting section
+.create-meeting {
+    padding: 100px 0;
+    overflow-x: hidden;
+
+    @media(max-width:980px) {
+        padding: 0;
+    }
+
+    .meeting-slider {
+        .slick-list {
+            overflow: visible;
+
+            .slide-items {
+                position: relative;
+
+                .slide-inner {
+                    height: 380px;
+
+                    @media(max-width:980px) {
+                        height: 720px;
+                        display: flex;
+                        flex-direction: column;
+                    }
+
+                    @media(max-width:425px) {
+                        height: 580px;
+
+                    }
+                   
+
+                }
+
+                .slideOne {
+
+                    background: #F8D2D7;
+                    .right-info {
+                        @media(max-width:980px) {
+                            width: 100%;
+                            text-align: center;
+                            padding-top: 70px;
+                        }
+
+                        h2 {
+                            font-family: 'aller-bold';
+                            font-size: 40px;
+                            color: $primary;
+                            text-transform: uppercase;
+
+                            @media(max-width:600px) {
+                                font-size: 30px;
+                            }
+                        } 
+                        
+                    }
+
+                    .mainObject {
+                        position: absolute;
+                        left: 7%;
+                        bottom: 0;
+
+                        @media(max-width:980px) {
+                            left: 20%;
+                        }
+
+                        @media(max-width:425px) {
+                            width: 70%;
+                        }
+                    }
+
+                    .whatsapp {
+                        width: 45px;
+                        position: absolute;
+                        left: 28%;
+                        top: -16%;
+                        animation: opacity 2s linear forwards, movement 5s linear infinite;
+                        @media(max-width:980px) {
+                            left: 57%;
+                            top: 40%;
+                        }
+
+                        @media(max-width:600px) {
+                            left: 63%;
+                            top: 40%;
+                        }
+
+                        @media(max-width:425px) {
+                            top: 49%;
+                        }
+                    }
+
+                    .video {
+                        width: 45px;
+                        position: absolute;
+                        left: 43%;
+                        top: 15%;
+                        animation: opacity 2s linear forwards, movement 5s linear infinite;
+                        @media(max-width:980px) {
+                            left: 80%;
+                            top: 56%;
+                        }
+
+                        @media(max-width:600px) {
+                            left: 89%;
+                            top: 53%;
+                        }
+
+                        @media(max-width:425px) {
+                            left: 85%;
+                            top: 61%;
+                        }
+                    }
+
+                    .sms {
+                        width: 45px;
+                        position: absolute;
+                        left: 6%;
+                        top: -5%;
+                        animation: opacity 2s linear forwards, movement 4s linear infinite;
+                        @media(max-width:980px) {
+                            left: 17%;
+                            top: 35%;
+                        }
+
+                        @media(max-width:425px) {
+                            left: 14%;
+                            top: 54%;
+                        }
+                    }
+
+                }
+
+                .slideTwo {
+                    background: #E8EEFF;
+                    
+                    .right-info {
+                        @media(max-width:980px) {
+                            width: 100%;
+                            text-align: center;
+                            padding-top: 70px;
+                        }
+
+                        h2 {
+                            font-family: 'aller-bold';
+                            font-size: 40px;
+                            color: $primary;
+                            text-transform: uppercase;
+
+                            @media(max-width:600px) {
+                                font-size: 30px;
+                            }
+                        } 
+                        
+                    }
+
+                    .mainObject {
+                        position: absolute;
+                        left: 7%;
+                        bottom: 0;
+
+                        @media(max-width:980px) {
+                            left: 20%;
+                        }
+
+                        @media(max-width:425px) {
+                            width: 70%;
+                        }
+                    }
+
+                    .whatsapp {
+                        width: 45px;
+                        position: absolute;
+                        left: 28%;
+                        top: -16%;
+                        animation: opacity 2s linear forwards, movement 5s linear infinite;
+                        @media(max-width:980px) {
+                            left: 57%;
+                            top: 40%;
+                        }
+
+                        @media(max-width:600px) {
+                            left: 63%;
+                            top: 40%;
+                        }
+
+                        @media(max-width:425px) {
+                            top: 49%;
+                        }
+                    }
+
+                    .video {
+                        width: 45px;
+                        position: absolute;
+                        left: 43%;
+                        top: 15%;
+                        animation: opacity 2s linear forwards, movement 5s linear infinite;
+                        @media(max-width:980px) {
+                            left: 80%;
+                            top: 56%;
+                        }
+
+                        @media(max-width:600px) {
+                            left: 89%;
+                            top: 53%;
+                        }
+
+                        @media(max-width:425px) {
+                            left: 85%;
+                            top: 61%;
+                        }
+                    }
+
+                    .sms {
+                        width: 45px;
+                        position: absolute;
+                        left: 6%;
+                        top: -5%;
+                        animation: opacity 2s linear forwards, movement 4s linear infinite;
+                        @media(max-width:980px) {
+                            left: 17%;
+                            top: 35%;
+                        }
+
+                        @media(max-width:425px) {
+                            left: 14%;
+                            top: 54%;
+                        }
+                    }
+                }
+
+            }
+        }
+
+        .slider-dots {
+            margin-top: -35px;
+
+            li[role="presentation"] {
+                &.slick-active {
+                    button {
+                        background: $primary;
+                        color: $primary;
+                    }
+                }
+
+                button {
+                    width: 34px;
+                    height: 10px;
+                    border: 0;
+                    background: #ffffff;
+                    border-radius: 6px;
+                    overflow: hidden;
+                    color: #ffffff;
+                    margin: 0 5px;
+                }
+            }
+        }
+    }
+}
+
 // Global css
+
+.btn-theme {
+    display: inline-flex;
+    border: 0;
+    align-items: stretch;
+    min-width: 250px;
+    border-radius: 10px;
+    background: $white;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+
+    .icon {
+        flex-basis: 70px;
+        color: $primary;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.5rem;
+        background: #F5F5F5;
+        box-shadow: -3px 5px 9px 6px #0000001c;
+        border-radius: 10px;
+    }
+
+    .link {
+        padding: 10px;
+
+        a {
+            text-align: center;
+            color: $primary;
+            font-family: 'aller';
+            text-transform: capitalize;
+            font-size: 25px;
+            text-decoration: none;
+        }
+    }
+
+    &:hover {
+        background: $primary;
+
+        .link {
+            a {
+                color: $white;
+            }
+        }
+    }
+}
+
+.slider-dots {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    margin-top: 25px;
+    padding: 0;
+
+    li[role="presentation"] {
+        &.slick-active {
+            button {
+                background: $primary;
+                color: $primary;
+            }
+        }
+
+        button {
+            width: 34px;
+            height: 10px;
+            border: 0;
+            background: #E6E6E6;
+            border-radius: 6px;
+            overflow: hidden;
+            color: #E6E6E6;
+            margin: 0 5px;
+        }
+    }
+}
 
 .userNotification {
     display: flex;
-    background-color:$white;
+    background-color: $white;
     position: fixed;
-    z-index: 1; 
-    left:-100%; 
+    z-index: 1;
+    left: -100%;
     // left:20px;
     border-radius: 10px;
     padding: 15px;
     column-gap: 15px;
     bottom: 17px;
     transition: all 0.5s ease;
-    max-width: 320px; 
+    max-width: 320px;
     box-shadow: 3px 3px 5px #655f5f9c;
 
-    &.active{
+    &.active {
         left: 20px;
     }
 
@@ -270,18 +658,20 @@
             &:nth-child(3) {
                 font-size: 16px;
                 font-family: 'poppins ';
-                color:#DA1E37;
+                color: #DA1E37;
             }
         }
     }
-    .quite{
+
+    .quite {
         position: absolute;
         top: 6px;
         right: 11px;
         font-size: 1.4rem;
         color: #666;
-        cursor:pointer;
-        &:hover{
+        cursor: pointer;
+
+        &:hover {
             color: $primary;
         }
     }
@@ -294,5 +684,16 @@
     .iconify {
         font-size: 2rem;
         color: $white;
+    }
+}
+
+.section-title {
+    font-size: 35px;
+    font-family: 'aller-bold';
+    text-transform: uppercase;
+    color: #131313;
+    @media(max-width:768px){
+        font-size: 25px;
+        text-align: center;
     }
 }
